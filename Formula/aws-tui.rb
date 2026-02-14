@@ -5,21 +5,21 @@
 class AwsTui < Formula
   desc "Terminal User Interface for AWS services"
   homepage "https://github.com/aws-tui/aws-tui"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.6/aws-tui-darwin-amd64.tar.gz"
-      sha256 "505c04a3289359e307b1f27154dcc52a854e632c42f611515adc30860d4a0ebf"
+      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.7/aws-tui-darwin-amd64.tar.gz"
+      sha256 "501678b521a5dcc86407d28547ed9d4ec8bf73b4447921b1040dfe64e908a841"
 
       def install
         bin.install "aws-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.6/aws-tui-darwin-arm64.tar.gz"
-      sha256 "c95e941571ecb3028204afb16718b4637c5074518ac7fd5a817bfc0a644ee6d2"
+      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.7/aws-tui-darwin-arm64.tar.gz"
+      sha256 "2c4a6f92a5fa059288bd3eaed2362427449eb6b15ebd06645c64a5257482eb99"
 
       def install
         bin.install "aws-tui"
@@ -29,15 +29,15 @@ class AwsTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.6/aws-tui-linux-amd64.tar.gz"
-      sha256 "bac75f228ed770996aab0d761a975fa0adb9495844129e621c22145d44660c17"
+      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.7/aws-tui-linux-amd64.tar.gz"
+      sha256 "021f4ceeea6dbb13202155acc1d669efd622aa737b2ccb8c7a2c60bf94e52469"
       def install
         bin.install "aws-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.6/aws-tui-linux-arm64.tar.gz"
-      sha256 "6d0cea813da906a6235fd0f73cd6013fb93d3a92191ff1775bba1b8f0b02be08"
+      url "https://github.com/aws-tui/aws-tui/releases/download/v0.1.7/aws-tui-linux-arm64.tar.gz"
+      sha256 "a0bc27f0b7211398a1a21c7c4836c4f888cb28b7ed038bd77d50be62f2d0b5d3"
       def install
         bin.install "aws-tui"
       end
