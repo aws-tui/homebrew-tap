@@ -3,7 +3,7 @@ cask "aws-tui" do
   name "aws-tui"
   desc "Terminal User Interface for AWS services"
   homepage "https://github.com/aws-tui/aws-tui"
-  version "0.1.11"
+  version "0.1.12"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "aws-tui" do
   on_macos do
     on_intel do
       url "https://github.com/aws-tui/aws-tui/releases/download/v#{version}/aws-tui-darwin-amd64.tar.gz"
-      sha256 "f0cd46ee1e4273e831b8627851dd72072d5f8663c76b9c3267c6eeba86e11c6a"
+      sha256 "fe42dd81382be03a15f231ee176ce64e58943060ca347deda577b20d66524f81"
     end
     on_arm do
       url "https://github.com/aws-tui/aws-tui/releases/download/v#{version}/aws-tui-darwin-arm64.tar.gz"
-      sha256 "5b310390da3a4b4b9fbd508ec81cc25c654088d86924e841bfef497f5dadb1ff"
+      sha256 "63026e645817b1d9ea866782151b02b658eff4698d2226984402589c80a18715"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aws-tui/aws-tui/releases/download/v#{version}/aws-tui-linux-amd64.tar.gz"
-      sha256 "780cf53a250fb36739a0f2a8e005238d1e337236955d12886cc7472f4df1eae2"
+      sha256 "b74545168639035b93f983d5df0f38f71d218c147eca58a3592a989d283713ea"
     end
     on_arm do
       url "https://github.com/aws-tui/aws-tui/releases/download/v#{version}/aws-tui-linux-arm64.tar.gz"
-      sha256 "04bcd2b68b23736b6e33f72b7305c8f705a10d236591e2fbcd0deca66a8f7628"
+      sha256 "d30400e737fcc1b87f7a4d152dfd2151b6d699224356e7f9f43e087249344241"
     end
   end
 
